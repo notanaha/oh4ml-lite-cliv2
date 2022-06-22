@@ -1,0 +1,6 @@
+$schema: https://azuremlschemas.azureedge.net/latest/environment.schema.json
+name: test-arima-env-02
+image: mcr.microsoft.com/azureml/openmpi3.1.2-cuda10.2-cudnn8-ubuntu18.04
+version: 6
+conda_file: ./arima-env-01.yml
+description: env-mlops-lite-cliv2

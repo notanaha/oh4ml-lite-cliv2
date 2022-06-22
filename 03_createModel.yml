@@ -1,0 +1,6 @@
+$schema: https://azuremlschemas.azureedge.net/latest/model.schema.json
+name: arima-model-cliv2
+path: artifacts/outputs/models
+tags:
+    {'key1 : value1','key2 : value2'}
+description: arima-model-cliv2

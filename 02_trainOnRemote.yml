@@ -1,0 +1,15 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+experiment_name: arima-mlops-remote2-cliv2
+description: arima-mlops-remote2 by CLIv2
+type: command
+code: ./scripts
+command: >-
+  python train.py
+  --input ${{inputs.transaction_ts2013}}
+inputs:
+  transaction_ts2013:
+    type: uri_file
+    path: azureml://datastores/demostore/paths/mlops_timeseries/mlops_forecast_data2013.csv
+environment: azureml:test-arima-env-02@latest
+compute: azureml:demo-cpucluster1
+
