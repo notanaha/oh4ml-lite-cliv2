@@ -5,8 +5,6 @@ model: azureml:arima-model-cliv2:1
 code_configuration:
   code: ../scripts/
   scoring_script: score.py
-environment: 
-  conda_file: ../arima-env-01.yml
-  image: mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04:20210727.v1
+environment: azureml:test-arima-env-02@latest
 instance_type: Standard_DS2_v2
 instance_count: 1
